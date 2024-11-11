@@ -1,0 +1,36 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# ASP.NET Core
+wwwroot/
+
+# ASP.NET
+App_Data/
+
+# NUGET
+*.nupkg
+# User-specific files
+.idea/
+.vscode/
+*.vsconfig
+
+# JavaScript
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build output
+/dist/
+/build/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
