@@ -1,49 +1,49 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
-using System.Text.Json;
-using System.Threading;
 using System.Net.Http;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using NetCoreClient.Sensors;
+using NetCoreClient.Protocols;
 
-        // Set the URL for the server
-        var url = "http://localhost:8011/water_data"; // Replace with your server's URL
 
-        // Create an HttpClient to send requests
-        using var client = new HttpClient();
+// Definisci i sensori
+List<ISensorInterface> sensors = new();
+sensors.Add(new VirtualWaterTempSensor());
+sensors.Add(new VirtualAvailableWaterSensor());
+sensors.Add(new VirtualFilterConditionSensor());
 
-        // Generate sensor data and send it every second
-        while (true)
-        {
-            // Simulating sensor data
-            var flowRate = new Random().Next(0, 100);  // Random flow rate (0 to 100)
-            var waterTemperature = new Random().Next(20, 40); // Random temperature (20 to 40)
 
-            // Create the data object to send
-            var data = new
-            {
-                flowRate = flowRate,
-                waterTemperature = waterTemperature
-            };
+var url = "http://localhost:8011/water_coolers/123"; 
 
-            // Convert the data object to JSON
-            var jsonData = JsonSerializer.Serialize(data);
+using var client = new HttpClient();
 
-            // Send the data to the server
-            var content = new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json");
+while (true)
+{
+    var sensorData = new
+    {
+        waterTemperature = ((VirtualWaterTempSensor)sensors[0]).WaterTemperature(),
+        availableWaterAmount = ((VirtualAvailableWaterSensor)sensors[1]).AvailableWaterAmount(),
+        isFilterOperational = ((VirtualFilterConditionSensor)sensors[2]).IsFilterOperational()
+    };
 
-            // Post the data to the server
-            var response = await client.PostAsync(url, content);
+    var jsonData = JsonSerializer.Serialize(sensorData);
 
-            if (response.IsSuccessStatusCode)
-            {
-                Console.WriteLine("Data sent successfully: " + jsonData);
-            }
-            else
-            {
-                Console.WriteLine("Error sending data: " + response.StatusCode);
-            }
+    var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-            // Wait for 1 second before sending the next data
-            Thread.Sleep(1000);
-        }
- 
+    var response = await client.PostAsync(url, content);
+
+    if (response.IsSuccessStatusCode)
+    {
+        Console.WriteLine("Data sent successfully: " + jsonData);
+    }
+    else
+    {
+        Console.WriteLine("Error sending data: " + response.StatusCode);
+    }
+
+    Thread.Sleep(1000); ; 
+}
+

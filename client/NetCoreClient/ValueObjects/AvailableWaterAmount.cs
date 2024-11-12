@@ -1,13 +1,12 @@
 ﻿namespace NetCoreClient.ValueObjects
 {
-    internal class FlowRate
+    internal class AvailableWaterAmount
     {
         public int Value { get; private set; }
 
-        public FlowRate(int value)
+        public AvailableWaterAmount(int value)
         {
             this.Value = value;
         }
-
     }
 }
