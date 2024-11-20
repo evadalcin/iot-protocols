@@ -3,5 +3,6 @@
     interface ISensorInterface
     {
         string ToJson();
+        string GetSlug();
     }
 }

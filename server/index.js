@@ -1,23 +1,25 @@
 require('dotenv').config();
 const restify = require('restify');
-const { insertWaterCoolerData } = require('./mysql');
+const { insertWaterCoolerData } = require('./influx');
 
 const server = restify.createServer();
 server.use(restify.plugins.bodyParser());
 
-server.post('/water_coolers/:id', async (req, res) => {
+server.post('/water_coolers/:id', function (req, res, next) {
     const coolerId = req.params.id;
-    const { waterTemperature, availableWaterAmount, isFilterOperational } = req.body;
+    const { Name, Value } = req.body;
 
     try {
-        await insertWaterCoolerData(coolerId, waterTemperature, availableWaterAmount, isFilterOperational);
-        res.send(200, { status: 'Data received and saved' });
+        insertWaterCoolerData(coolerId, Name, Value);
+        res.send(200, { status: 'Dati ricevuti e salvati' });
     } catch (err) {
-        console.error('Error saving data:', err);
-        res.send(500, { status: 'Error saving data' });
+        console.error('Errore durante il salvataggio dei dati:', err);
+        res.send(500, { status: 'Errore nel salvataggio dei dati' });
     }
+
+    return next();
 });
 
 server.listen(8011, () => {
-    console.log('%s listening at %s', server.name, server.url);
+    console.log('%s in ascolto su %s', server.name, server.url);
 });
