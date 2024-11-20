@@ -1,24 +1,31 @@
-﻿using System.Net;
+﻿using NetCoreClient.Protocols;
+using NetCoreClient.Protocols;
+using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace NetCoreClient.Protocols
+public class Http : IProtocolInterface
 {
-    class Http : ProtocolInterface
+    private readonly string Endpoint;
+    private static readonly HttpClient client = new HttpClient();
+
+    public Http(string endpoint)
     {
-        private string Endpoint;
-        //private HttpWebRequest httpWebRequest;
+        this.Endpoint = endpoint;
+    }
 
-        public Http(string endpoint)
+    public async void Send(string data, string sensor)
+    {
+        try
         {
-            this.Endpoint = endpoint;
+            var content = new StringContent(data, Encoding.UTF8, "application/json");
+
+            var result = await client.PostAsync(Endpoint, content);
         }
-
-        public async void Send(string data)
+        catch (Exception ex)
         {
-            var client = new HttpClient();
-
-            var result = await client.PostAsync(Endpoint, new StringContent(data));
-
-            Console.Out.WriteLine(result.StatusCode);
+            Console.WriteLine($"Si è verificato un errore durante l'invio dei dati: {ex.Message}");
         }
     }
 }

@@ -97,3 +97,158 @@ C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\obj\Deb
 C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.pdb
 C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.genruntimeconfig.cache
 C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\ref\NetCoreClient.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Eva Dal Cin\Documents\GitHub\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.exe
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.deps.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.runtimeconfig.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.AssemblyReference.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfoInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfo.cs
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CoreCompileInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.sourcelink.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CopyComplete
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\refint\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.genruntimeconfig.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocolsevina\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\ref\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.exe
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.deps.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.runtimeconfig.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.AssemblyReference.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfoInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfo.cs
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CoreCompileInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.sourcelink.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CopyComplete
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\refint\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.genruntimeconfig.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - - -\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\ref\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.AssemblyReference.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfoInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfo.cs
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CoreCompileInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.sourcelink.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\refint\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.exe
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.deps.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.runtimeconfig.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CopyComplete
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.genruntimeconfig.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - mqtt\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\ref\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.exe
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.deps.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.runtimeconfig.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.AssemblyReference.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfoInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.AssemblyInfo.cs
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CoreCompileInputs.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.sourcelink.json
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.csproj.CopyComplete
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\refint\NetCoreClient.dll
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.pdb
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\NetCoreClient.genruntimeconfig.cache
+C:\Users\Giacomo Di Bert\Desktop\iot-protocols - http\iot-protocols\client\NetCoreClient\obj\Debug\net6.0\ref\NetCoreClient.dll
