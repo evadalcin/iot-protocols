@@ -10,7 +10,7 @@ namespace NetCoreClient.Protocols
 {
     internal class Mqtt : IProtocolInterface
     {
-        private const string TOPIC_PREFIX = "iot2025/water_coolers/123/";
+        private const string TOPIC_PREFIX = "iot2025/water_coolers/123/sensor/";
         private IMqttClient mqttClient;
         private string endpoint;
 
