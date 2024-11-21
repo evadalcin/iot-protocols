@@ -131,3 +131,7 @@ iot2025/water_coolers/123/command
 #### Codice Lato Server (MQTT.js)
 
 Il server si connette al broker MQTT e ascolta i topic per i dati e i comandi. Quando riceve un messaggio, lo elabora, salva i dati nel database e risponde ai comandi.
+
+#### Diagramma di sequenza:
+
+![Diagramma di sequenza:](flowchart.png)
