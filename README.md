@@ -92,7 +92,7 @@ Nel caso di `WaterTempSensor`, il payload JSON potrebbe apparire come segue:
   "Value": 23
 }
 ```
-
+ 
 ---
 
 ### Diagrammi di Sequenza
