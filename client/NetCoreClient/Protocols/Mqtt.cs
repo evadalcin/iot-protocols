@@ -26,13 +26,25 @@ namespace NetCoreClient.Protocols
         private async Task<MqttClientConnectResult> Connect()
         {
             var factory = new MqttFactory();
+
             var options = new MqttClientOptionsBuilder()
                 .WithTcpServer(this.endpoint)
+                .WithCredentials("yourUsername", "yourPassword")
+                .WithCleanSession(false)
                 .Build();
 
             mqttClient = factory.CreateMqttClient();
 
-            await mqttClient.ConnectAsync(options, CancellationToken.None);
+            try
+            {
+                await mqttClient.ConnectAsync(options, CancellationToken.None);
+                Console.WriteLine("MQTT client connected with authentication.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error connecting to MQTT broker: {ex.Message}");
+            }
+
             return new MqttClientConnectResult();
         }
 
@@ -123,6 +135,7 @@ namespace NetCoreClient.Protocols
                 .WithTopic(SENSOR_TOPIC_PREFIX + sensor)
                 .WithPayload(data)
                 .WithQualityOfServiceLevel(MqttQualityOfServiceLevel.ExactlyOnce)
+                .WithRetainFlag(true)
                 .Build();
 
             await mqttClient.PublishAsync(message, CancellationToken.None);
