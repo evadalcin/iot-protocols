@@ -1,9 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace NetCoreClient.Protocols
+﻿public interface IProtocolInterface
 {
-    public interface IProtocolInterface
-    {
-        void Send(string data, string sensor);
-    }
+    Task Send(string data, string sensor); // Metodo asincrono per inviare un messaggio MQTT
 }

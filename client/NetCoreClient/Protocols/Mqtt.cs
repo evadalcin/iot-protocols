@@ -9,53 +9,111 @@ using System.Threading.Tasks;
 
 namespace NetCoreClient.Protocols
 {
-    internal class Mqtt : IProtocolInterface
+    public class Mqtt : IProtocolInterface
     {
         private const string SENSOR_TOPIC_PREFIX = "iot2025/water_coolers/123/sensor/";
         private const string COMMAND_TOPIC_PREFIX = "iot2025/water_coolers/123/command/";
+        private const string STATUS_TOPIC = "iot2025/water_coolers/123/sensor/status";
+
         private IMqttClient mqttClient;
         private string endpoint;
+        private bool maintenance_mode;
+        private bool light_on;
 
         public Mqtt(string endpoint)
         {
             this.endpoint = endpoint;
-            Connect().GetAwaiter().GetResult();
-            SubscribeToCommands();
+            InitializeMqttClient();
         }
 
-        private async Task<MqttClientConnectResult> Connect()
+        private void InitializeMqttClient()
         {
             var factory = new MqttFactory();
+            mqttClient = factory.CreateMqttClient();
+
+            var willMessage = new MqttApplicationMessageBuilder()
+                .WithTopic(STATUS_TOPIC)
+                .WithPayload("offline")
+                .WithQualityOfServiceLevel(MqttQualityOfServiceLevel.ExactlyOnce)
+                .WithRetainFlag(true)
+                .Build();
 
             var options = new MqttClientOptionsBuilder()
                 .WithTcpServer(this.endpoint)
                 .WithCredentials("yourUsername", "yourPassword")
                 .WithCleanSession(false)
+                .WithWillMessage(willMessage)
                 .Build();
 
-            mqttClient = factory.CreateMqttClient();
+            mqttClient.ConnectedAsync += HandleConnectedAsync;
+            mqttClient.DisconnectedAsync += HandleDisconnectedAsync;
+
+            ConnectWithRetry(options);
+        }
+
+        private void ConnectWithRetry(IMqttClientOptions options)
+        {
+            Task.Run(async () =>
+            {
+                while (true)
+                {
+                    try
+                    {
+                        await mqttClient.ConnectAsync(options, CancellationToken.None);
+                        break; 
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Connection failed: {ex.Message}. Retrying in 5 seconds...");
+                        await Task.Delay(TimeSpan.FromSeconds(5));
+                    }
+                }
+            });
+        }
+
+        private async Task HandleConnectedAsync(MqttClientConnectedEventArgs e)
+        {
+            Console.WriteLine("Connected to MQTT Broker");
 
             try
             {
-                await mqttClient.ConnectAsync(options, CancellationToken.None);
-                Console.WriteLine("MQTT client connected with authentication.");
+                await PublishStatusMessage("online");
+
+                await SubscribeToCommands();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error connecting to MQTT broker: {ex.Message}");
+                Console.WriteLine($"Error in connection handling: {ex.Message}");
             }
-
-            return new MqttClientConnectResult();
         }
 
-        private bool light_on = false;
-        private bool maintenance_mode = false;
+        private async Task HandleDisconnectedAsync(MqttClientDisconnectedEventArgs e)
+        {
+            Console.WriteLine($"Disconnected from MQTT Broker. Reason: {e.Reason}");
 
-        private void SubscribeToCommands()
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            InitializeMqttClient(); 
+        }
+
+        private async Task PublishStatusMessage(string status)
+        {
+            var statusMessage = new MqttApplicationMessageBuilder()
+                .WithTopic(STATUS_TOPIC)
+                .WithPayload(status)
+                .WithQualityOfServiceLevel(MqttQualityOfServiceLevel.ExactlyOnce)
+                .WithRetainFlag(true)
+                .Build();
+
+            await mqttClient.PublishAsync(statusMessage, CancellationToken.None);
+        }
+
+        private async Task SubscribeToCommands()
         {
             try
             {
-                mqttClient.SubscribeAsync(new MqttTopicFilterBuilder().WithTopic(COMMAND_TOPIC_PREFIX + "#").Build());
+                await mqttClient.SubscribeAsync(new MqttTopicFilterBuilder()
+                    .WithTopic(COMMAND_TOPIC_PREFIX + "#")
+                    .Build());
 
                 mqttClient.ApplicationMessageReceivedAsync += async e =>
                 {
@@ -66,7 +124,7 @@ namespace NetCoreClient.Protocols
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Errore nella sottoscrizione ai comandi: {ex.Message}");
+                Console.WriteLine($"Error subscribing to commands: {ex.Message}");
             }
         }
 
@@ -76,7 +134,7 @@ namespace NetCoreClient.Protocols
             {
                 var commandData = System.Text.Json.JsonSerializer.Deserialize<CommandData>(payload);
 
-                switch (commandData.Command)
+                switch (commandData?.Command)
                 {
                     case "light_on":
                         if (commandData.Status)
@@ -91,45 +149,41 @@ namespace NetCoreClient.Protocols
                             DisableMaintenanceMode();
                         break;
                     default:
-                        Console.WriteLine($"Comando sconosciuto: {commandData.Command} stato: {commandData.Status}");
+                        Console.WriteLine($"Unknown command: {commandData?.Command} with status: {commandData?.Status}");
                         break;
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Errore nel parsing del comando: {ex.Message}");
+                Console.WriteLine($"Error parsing command: {ex.Message}");
             }
         }
 
         private void TurnOnNightLight()
         {
             light_on = true;
-            Console.WriteLine("Luce notturna accesa.");
-            Console.WriteLine($"Stato luce notturna: {light_on}");
+            Console.WriteLine("Night light turned on.");
         }
 
         private void TurnOffNightLight()
         {
             light_on = false;
-            Console.WriteLine("Luce notturna spenta.");
-            Console.WriteLine($"Stato luce notturna: {light_on}");
+            Console.WriteLine("Night light turned off.");
         }
 
         private void EnableMaintenanceMode()
         {
             maintenance_mode = true;
-            Console.WriteLine("Modalità manutenzione attivata.");
-            Console.WriteLine($"Stato manutenzione: {maintenance_mode}");
+            Console.WriteLine("Maintenance mode enabled.");
         }
 
         private void DisableMaintenanceMode()
         {
             maintenance_mode = false;
-            Console.WriteLine("Modalità manutenzione disattivata.");
-            Console.WriteLine($"Stato manutenzione: {maintenance_mode}");
+            Console.WriteLine("Maintenance mode disabled.");
         }
 
-        public async void Send(string data, string sensor)
+        public async Task Send(string data, string sensor)
         {
             var message = new MqttApplicationMessageBuilder()
                 .WithTopic(SENSOR_TOPIC_PREFIX + sensor)
@@ -145,7 +199,7 @@ namespace NetCoreClient.Protocols
     public class CommandData
     {
         [JsonPropertyName("command")]
-        public string? Command { get; set; }
+        public string Command { get; set; }
 
         [JsonPropertyName("status")]
         public bool Status { get; set; }
