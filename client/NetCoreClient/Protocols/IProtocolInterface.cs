@@ -4,6 +4,6 @@ namespace NetCoreClient.Protocols
 {
     public interface IProtocolInterface
     {
-        void Send(string data, string sensor);
+        Task Send(string data, string sensor);
     }
 }

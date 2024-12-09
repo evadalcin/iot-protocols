@@ -1,24 +1,34 @@
 ﻿using NetCoreClient.Protocols;
 using NetCoreClient.Sensors;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-List<ISensorInterface> sensors = new();
-sensors.Add(new WaterTempSensor());
-sensors.Add(new WaterLevelSensor());
-sensors.Add(new FilterSensor());
-
-string endpointHttp = "http://localhost:8011/water_coolers/123";
-IProtocolInterface protocol = new Http(endpointHttp);
-
-while (true)
+class Program
 {
-    foreach (ISensorInterface sensor in sensors)
+    static async Task Main(string[] args)
     {
-        var sensorValue = sensor.ToJson();
+        List<ISensorInterface> sensors = new();
+        sensors.Add(new WaterTempSensor());
+        sensors.Add(new WaterLevelSensor());
+        sensors.Add(new FilterSensor());
 
-        protocol.Send(sensorValue, sensor.GetSlug());
+        IProtocolInterface protocol = new Amqp(Environment.GetEnvironmentVariable("AMQP_URL"));
 
-        Console.WriteLine("Data sent: " + sensorValue);
+        await ((Amqp)protocol).InitializeAmqpClient();
 
-        Thread.Sleep(1000);
+        while (true)
+        {
+            foreach (ISensorInterface sensor in sensors)
+            {
+                var sensorValue = sensor.ToJson();
+
+                await protocol.Send(sensorValue, sensor.GetSlug());
+
+                Console.WriteLine("Data sent: " + sensorValue);
+
+                await Task.Delay(1000);
+            }
+        }
     }
 }

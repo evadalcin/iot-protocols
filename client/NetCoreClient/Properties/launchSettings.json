@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NetCoreClient": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AMQP_URL": "amqps://bcdewdgy:Bzl1_4tEAUo0mI8nWY0ltDDm6VFSdDEd@ostrich.lmq.cloudamqp.com/bcdewdgy"
+      }
+    }
+  }
+}
