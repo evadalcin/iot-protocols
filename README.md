@@ -66,11 +66,11 @@ Il server può ricevere comandi MQTT per eseguire azioni come accendere/spegnere
 
 Il client invia i dati dei sensori al server utilizzando i seguenti topic MQTT strutturati:
 
-iot2025/water_coolers/<ID_CASSETTA>/sensor/<SENSOR_NAME>
+iot2025/water_coolers/<ID_CASETTA>/sensor/<SENSOR_NAME>
 
 Dove:
 
-- <ID_CASSETTA> è l'ID della casetta dell'acqua.
+- <ID_CASETTA> è l'ID della casetta dell'acqua.
 - <SENSOR_NAME> è il nome del sensore (es. "temperature", "waterLevel", "filterStatus").
 
 Esempi:
@@ -83,11 +83,11 @@ Esempi:
 
 I comandi sono inviati al server tramite topic strutturati come segue:
 
-iot2025/water_coolers/<ID_CASSETTA>/command
+iot2025/water_coolers/<ID_CASETTA>/command
 
 Dove:
 
-- <ID_CASSETTA> è l'ID della casetta dell'acqua.
+- <ID_CASETTA> è l'ID della casetta dell'acqua.
 
 ---
 
