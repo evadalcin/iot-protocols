@@ -1,32 +1,30 @@
-const amqp = require('amqplib');
-const { insertWaterCoolerData } = require('./influx');
+var { InfluxDB, Point } = require('@influxdata/influxdb-client')
+require('dotenv').config();
 
-async function start() {
-    const connection = await amqp.connect(process.env.AMQP_URL);
-    const channel = await connection.createChannel();
+const url = process.env.URL
+const token = process.env.TOKEN
+const bucket = process.env.BUCKET
+const org = process.env.ORG
 
-    const queue = 'sensor_data_queue';
-    await channel.assertQueue(queue, { durable: false });
+const client = new InfluxDB({ url, token })
 
-    console.log("Waiting for messages in %s", queue);
+function insertWaterCoolerData(id, key, value) {
+    return new Promise(function (resolve, reject) {
 
-    channel.consume(queue, async (msg) => {
-        if (msg !== null) {
-            const sensorData = JSON.parse(msg.content.toString());
-            const { Name, Value } = sensorData;
-            const coolerId = 123;
+        try {
+            let writeApi = client.getWriteApi(org, bucket, 'ns')
 
-            try {
-                await insertWaterCoolerData(coolerId, Name, Value);
-                console.log("Data inserted:", sensorData);
+            let point = new Point(water_coolers#${ id })
+                .intField(key, value)
 
-                channel.ack(msg);
-            } catch (err) {
-                console.error('Failed to insert data into InfluxDB', err);
-                channel.nack(msg);
-            }
+            writeApi.writePoint(point);
+            writeApi.flush();
+
+            resolve('Success');
+        } catch (err) {
+            reject(err);
         }
     });
 }
 
-start().catch(console.error);
+module.exports = { insertWaterCoolerData };
