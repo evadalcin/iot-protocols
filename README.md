@@ -48,6 +48,3 @@ water_coolers.*.sensor.#
 
 Il server riceve i messaggi, estrae i dati del sensore e li inserisce nel database InfluxDB per ulteriori analisi.
 
-## Conclusioni
-
-Il protocollo **AMQP**, tramite RabbitMQ e l'uso dell'exchange di tipo **topic**, offre una soluzione scalabile e affidabile per la comunicazione tra il client e il server nel sistema di monitoraggio della casetta dell'acqua. I dati dei sensori vengono inviati in modo asincrono e sicuro, permettendo una gestione efficiente delle informazioni raccolte.
