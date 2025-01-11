@@ -10,7 +10,6 @@ const client = new InfluxDB({ url, token })
 
 function insertWaterCoolerData(id, key, value) {
     return new Promise(function (resolve, reject) {
-
         try {
             let writeApi = client.getWriteApi(org, bucket, 'ns')
 
@@ -18,7 +17,7 @@ function insertWaterCoolerData(id, key, value) {
                 .intField(key, value)
 
             writeApi.writePoint(point);
-            writeApi.flush(); 
+            writeApi.flush();
 
             resolve('Success');
         } catch (err) {
