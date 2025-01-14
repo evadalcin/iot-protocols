@@ -1,13 +1,35 @@
 ﻿using NetCoreClient.Protocols;
 using NetCoreClient.Sensors;
 
+
 List<ISensorInterface> sensors = new();
 sensors.Add(new WaterTempSensor());
 sensors.Add(new WaterLevelSensor());
 sensors.Add(new FilterSensor());
 
-var waterCoolerServer = new Server(sensors);
-waterCoolerServer.Start();
+var protocol = new CoapProtocol();
 
-Console.WriteLine("Premi qualsiasi tasto per terminare...");
-Console.ReadKey();
+protocol.Start();
+
+try
+{
+    while (true)
+    {
+        foreach (ISensorInterface sensor in sensors)
+        {
+            var sensorValue = sensor.ToJson();
+            protocol.Send(sensorValue, sensor.GetSlug());
+            // Console.WriteLine($"{sensor.GetSlug()}: {sensorValue}");
+            
+        }
+        await Task.Delay(10000);
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Errore: {ex.Message}");
+}
+finally
+{
+    protocol.Stop();
+}
